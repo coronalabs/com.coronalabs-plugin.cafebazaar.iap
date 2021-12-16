@@ -1,7 +1,7 @@
 display.setStatusBar( display.DefaultStatusBar )
 local json = require "json"
 
-local store = require("plugin.google.iap.v3")
+local store = require("plugin.cafebazaar.iap")
 
 local products = {
 	"p3",

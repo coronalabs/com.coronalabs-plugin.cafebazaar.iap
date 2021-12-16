@@ -12,7 +12,7 @@ settings =
 	plugins =
 	{
 		-- key is the name passed to Lua's 'require()'
-		["plugin.google.iap.v3"] =
+		["plugin.cafebazaar.iap"] =
 		{
 			-- required
 			publisherId = "com.coronalabs",

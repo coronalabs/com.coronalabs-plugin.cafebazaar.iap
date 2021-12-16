@@ -11,7 +11,7 @@ Drag&Drop `android` directory onto Android Studio dock icon.
 
 Execute `:plugin:exportPluginJar`: from android directory run `./gradlew :plugin:exportPluginJar`.
 
-Result should be in `plugin/build/outputs/jar/plugin.google.iap.v3.jar`.
+Result should be in `plugin/build/outputs/jar/plugin.cafebazaar.iap.jar`.
 
 
 ## Platform Support

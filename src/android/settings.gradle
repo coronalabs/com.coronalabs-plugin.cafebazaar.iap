@@ -1,2 +1,2 @@
-rootProject.name = "IAPv3"
+rootProject.name = "Bazaar"
 include("app", "plugin")

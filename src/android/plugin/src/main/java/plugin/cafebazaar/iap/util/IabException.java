@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package plugin.google.iap.v3.util;
+package plugin.cafebazaar.iap.util;
 
 /**
  * Exception thrown when something went wrong with in-app billing.

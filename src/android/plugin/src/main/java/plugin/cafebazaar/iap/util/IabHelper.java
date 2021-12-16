@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package plugin.google.iap.v3.util;
+package plugin.cafebazaar.iap.util;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -267,8 +267,8 @@ public class IabHelper {
             }
         };
 
-        Intent serviceIntent = new Intent("com.android.vending.billing.InAppBillingService.BIND");
-        serviceIntent.setPackage("com.android.vending");
+        Intent serviceIntent = new Intent("ir.cafebazaar.pardakht.InAppBillingService.BIND");
+        serviceIntent.setPackage("com.farsitel.bazaar");
         if (mContext != null &&
             mContext.getPackageManager() != null &&
             mContext.getPackageManager().queryIntentServices(serviceIntent, 0) != null &&

@@ -1,6 +1,6 @@
 // This corresponds to the name of the Lua library,
 // e.g. [Lua] require "plugin.library"
-package plugin.google.iap.v3;
+package plugin.cafebazaar.iap;
 
 import android.content.Context;
 import android.util.Log;
@@ -13,11 +13,11 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 
-import plugin.google.iap.v3.util.IabHelper;
-import plugin.google.iap.v3.util.IabResult;
-import plugin.google.iap.v3.util.Inventory;
-import plugin.google.iap.v3.util.Purchase;
-import plugin.google.iap.v3.util.SkuDetails;
+import plugin.cafebazaar.iap.util.IabHelper;
+import plugin.cafebazaar.iap.util.IabResult;
+import plugin.cafebazaar.iap.util.Inventory;
+import plugin.cafebazaar.iap.util.Purchase;
+import plugin.cafebazaar.iap.util.SkuDetails;
 
 import com.naef.jnlua.LuaState;
 import com.naef.jnlua.LuaType;
@@ -137,6 +137,16 @@ public class LuaLoader implements JavaFunction {
 					L.pop(1);
 				}
 				L.pop(1);
+				L.getField(-1, "bazaar");
+				if(L.type(-1) == LuaType.TABLE) {
+					//gets the key field from the google table
+					L.getField(-1, "key");
+					if(L.type(-1) == LuaType.STRING) {
+						licenseKey = L.toString(-1);
+					}
+					L.pop(1);
+				}
+				L.pop(1);
 			}
 			L.pop(1);
 		}
@@ -174,6 +184,8 @@ public class LuaLoader implements JavaFunction {
 
 					InitRuntimeTask task = new InitRuntimeTask(fHelper, result, fListener, fLibRef);
 					fDispatcher.send(task);
+
+					return;
 				}
 			});
 		} else {

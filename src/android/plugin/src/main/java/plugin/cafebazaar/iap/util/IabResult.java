@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package plugin.google.iap.v3.util;
+package plugin.cafebazaar.iap.util;
 
 /**
  * Represents the result of an in-app billing operation.

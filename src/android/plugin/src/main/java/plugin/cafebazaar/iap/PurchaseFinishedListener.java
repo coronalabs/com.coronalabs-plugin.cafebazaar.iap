@@ -1,6 +1,6 @@
 // This corresponds to the name of the Lua library,
 // e.g. [Lua] require "plugin.library"
-package plugin.google.iap.v3;
+package plugin.cafebazaar.iap;
 
 import android.content.Context;
 import android.util.Log;
@@ -11,9 +11,9 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
-import plugin.google.iap.v3.util.IabHelper;
-import plugin.google.iap.v3.util.IabResult;
-import plugin.google.iap.v3.util.Purchase;
+import plugin.cafebazaar.iap.util.IabHelper;
+import plugin.cafebazaar.iap.util.IabResult;
+import plugin.cafebazaar.iap.util.Purchase;
 
 import com.naef.jnlua.LuaState;
 import com.naef.jnlua.LuaType;
